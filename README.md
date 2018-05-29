@@ -24,3 +24,8 @@ ${project.artifactId}：项目的artifactId
 ${project.version}：项目的version,与${version} 等价
 
 ${project.build.finalName}：项目打包输出文件的名称，默认为${project.artifactId}-${project.version}
+
+
+# todo list
+* 父类引入一些变量;
+* 子模块之间 相互依赖
