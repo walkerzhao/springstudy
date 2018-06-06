@@ -23,6 +23,7 @@
         <module>son-project</module>
         <module>daughter-project</module>
         <module>springboot-hello</module>
+        <module>springconfig</module>
     </modules>
 
     <properties>
@@ -49,14 +50,7 @@
                 <scope>test</scope>
             </dependency>
 
-            <!-- 如果存在某一个项目包含dependencyManagement，可以通过<scope>import</scope>把其中的如果存在某一个项目包含dependencyManagement内容依赖过来 -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.5.3.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
