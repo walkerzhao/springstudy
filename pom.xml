@@ -5,16 +5,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- 聚合体，父项目 -->
-    <groupId>voctrals</groupId>
-    <artifactId>parent-project</artifactId>
+    <groupId>com.tencent</groupId>
+    <artifactId>springstudy</artifactId>
     <packaging>pom</packaging>
-    <!--<version>1.0-SNAPSHOT</version>-->
-    <version>{project.version}</version>
+    <version>1.0-SNAPSHOT</version>
+    <!--<version>{project.version}</version>-->
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
     <!-- 子模块 -->
     <modules>
         <module>son-project</module>
         <module>daughter-project</module>
+        <module>springboot-hello</module>
     </modules>
 
     <properties>
@@ -37,7 +45,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.11</version>
+                <version>4.12</version>
                 <scope>test</scope>
             </dependency>
 
