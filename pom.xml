@@ -24,6 +24,7 @@
         <module>daughter-project</module>
         <module>springboot-hello</module>
         <module>springconfig</module>
+        <!--<module>eureka-server</module>-->
     </modules>
 
     <properties>
