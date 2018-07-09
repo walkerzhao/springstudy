@@ -20,11 +20,14 @@
 
     <!-- 子模块 -->
     <modules>
-        <module>son-project</module>
-        <module>daughter-project</module>
+        <!--<module>son-project</module>-->
+        <!--<module>daughter-project</module>-->
         <module>springboot-hello</module>
         <module>springconfig</module>
-        <!--<module>eureka-server</module>-->
+        <module>eureka-server</module>
+        <module>service-feign</module>
+        <module>service-hi</module>
+        <module>service-ribbon</module>
     </modules>
 
     <properties>
