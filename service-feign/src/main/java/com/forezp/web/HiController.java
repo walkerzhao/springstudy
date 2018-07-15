@@ -2,15 +2,22 @@ package com.forezp.web;
 
 import com.forezp.service.SchedualServiceHi;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Random;
+
 /**
  * Created by fangzhipeng on 2017/4/6.
  */
-@RestController
+//@RestController
+@Controller
 public class HiController {
 
     @Autowired
@@ -19,4 +26,20 @@ public class HiController {
     public String sayHi(@RequestParam String name){
         return schedualServiceHi.sayHiFromClientOne(name);
     }
+
+    /**
+     *  获取微信绑定手机号
+     * @param
+     * @return
+     */
+    @RequestMapping("/testRedirect1")
+    public String getTest1(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        String redirectUrl =  "redirect:" + "http://www.baidu.com";
+        Random random = new Random();
+        int data = random.nextInt(21_0000_0000);
+        redirectUrl = redirectUrl + "/" + data;
+//		resp.sendRedirect(redirectUrl);
+        return redirectUrl;
+    }
+
 }

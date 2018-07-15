@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.Random;
 
 /**
- * 小程序获取微信绑定手机号
+ * redirect problem reproduce.
  *
  * @author zhaoyu
  * @date 2018-07-09
@@ -33,7 +33,6 @@ public class MiniProgramController {
 	private LgnDao lgnDao;
 
 	/**
-	 *  获取微信绑定手机号
 	 * @param
 	 * @return
 	 */
@@ -46,6 +45,20 @@ public class MiniProgramController {
 //		resp.sendRedirect(redirectUrl);
 		return redirectUrl;
 	}
+
+//	/**
+//	* one resolve method
+//	 * @param
+//	 * @return
+//	 */
+//	@RequestMapping("/testRedirect1")
+//	public void getTest2(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+//		String redirectUrl =  "http://www.baidu.com";
+//		Random random = new Random();
+//		int data = random.nextInt(21_0000_0000);
+//		redirectUrl = redirectUrl + "/" + data;
+//		resp.sendRedirect(redirectUrl);
+//	}
 
 //	/**
 //	 *  获取微信绑定手机号
