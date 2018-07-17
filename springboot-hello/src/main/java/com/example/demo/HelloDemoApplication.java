@@ -1,8 +1,13 @@
 package com.example.demo;
 
+import com.example.demo.service.BookService;
+import com.example.demo.service.SmartBoss;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,8 +16,24 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloDemoApplication {
 
+	@Autowired
+	BookService bookService;
+
 	public static void main(String[] args) {
+
 		SpringApplication.run(HelloDemoApplication.class, args);
+
+
+		AbstractApplicationContext context = new AnnotationConfigApplicationContext(
+				HelloDemoApplication.class);
+		try {
+			SmartBoss boss = context.getBean(SmartBoss.class);
+			boss.goSomewhere();
+		} finally {
+			context.close();
+		}
+
+
 		System.out.println("hello,world");
 	}
 
