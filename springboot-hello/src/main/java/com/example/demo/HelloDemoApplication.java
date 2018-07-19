@@ -24,16 +24,6 @@ public class HelloDemoApplication {
 		SpringApplication.run(HelloDemoApplication.class, args);
 
 
-		AbstractApplicationContext context = new AnnotationConfigApplicationContext(
-				HelloDemoApplication.class);
-		try {
-			SmartBoss boss = context.getBean(SmartBoss.class);
-			boss.goSomewhere();
-		} finally {
-			context.close();
-		}
-
-
 		System.out.println("hello,world");
 	}
 
@@ -44,6 +34,7 @@ public class HelloDemoApplication {
 	public String sayHi(@RequestParam String name) {
 		String result = "hi "+name+",i am from port:" +port;
 		System.out.println(result);
+		bookService.bookFlight();
 		return result;
 	}
 }
