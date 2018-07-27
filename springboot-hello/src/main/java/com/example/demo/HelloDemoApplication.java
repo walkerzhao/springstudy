@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.service.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,8 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAsync
 public class HelloDemoApplication {
 
+	@Autowired
+	BookService bookService;
+
 	public static void main(String[] args) {
+
 		SpringApplication.run(HelloDemoApplication.class, args);
+
+
 		System.out.println("hello,world");
 	}
 
@@ -25,6 +33,7 @@ public class HelloDemoApplication {
 	public String sayHi(@RequestParam String name) {
 		String result = "hi "+name+",i am from port:" +port;
 		System.out.println(result);
+		bookService.bookFlight();
 		return result;
 	}
 }
