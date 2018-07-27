@@ -4,3 +4,26 @@
 
 /daughter-project/target
 /son-project/target
+eureka-server/.mvn/wrapper/maven-wrapper.properties
+eureka-server/mvnw
+eureka-server/mvnw.cmd
+service-feign/.mvn/wrapper/maven-wrapper.jar
+service-feign/mvnw
+service-feign/mvnw.cmd
+service-hi/.mvn/wrapper/maven-wrapper.jar
+service-hi/.mvn/wrapper/maven-wrapper.properties
+service-feign/.mvn/wrapper/maven-wrapper.jar
+service-hi/.mvn/wrapper/maven-wrapper.jar
+springboot-undertow/.mvn/wrapper/maven-wrapper.jar
+springboot-undertow/.mvn/wrapper/maven-wrapper.properties
+springboot-undertow/mvnw
+springboot-undertow/mvnw.cmd
+springconfig/target/classes/application-test.yaml
+springconfig/target/classes/application.properties
+springconfig/target/classes/application.yaml
+springconfig/target/classes/com/example/demo/ConfigDemoApplication.class
+springconfig/target/config-0.0.1-SNAPSHOT.jar
+springconfig/target/config-0.0.1-SNAPSHOT.jar.original
+springconfig/target/maven-archiver/pom.properties
+springconfig/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+springconfig/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
