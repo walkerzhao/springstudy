@@ -11,6 +11,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.env.SimpleCommandLinePropertySource;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,12 +21,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Random;
 
-@SpringBootApplication(scanBasePackages={"com.forezp"})
-//@EnableEurekaClient
-//@RestController
-@EnableDiscoveryClient
+@SpringBootApplication
+@RestController
+@EnableAsync
+@EnableEurekaClient
 @EnableFeignClients
-//@Controller
 public class ServiceHiApplication {
 
 //	@Override
@@ -38,15 +38,16 @@ public class ServiceHiApplication {
 //	}
 
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(ServiceHiApplication.class);
-		SimpleCommandLinePropertySource source = new SimpleCommandLinePropertySource(args);
-		if (!source.containsProperty("spring.profiles.active")
-				&& !System.getenv().containsKey("SPRING_PROFILES_ACTIVE")) {
-			// 如果未在命令行设置 --spring.profiles.active=dev 以及环境变量中没有
-			// SPRING_PROFILES_ACTIVE
-			app.setAdditionalProfiles("dev");// 默认使用开发环境
-		}
-		app.run(args);
+		SpringApplication.run(ServiceHiApplication.class, args);
+//		SpringApplication app = new SpringApplication(ServiceHiApplication.class);
+//		SimpleCommandLinePropertySource source = new SimpleCommandLinePropertySource(args);
+//		if (!source.containsProperty("spring.profiles.active")
+//				&& !System.getenv().containsKey("SPRING_PROFILES_ACTIVE")) {
+//			// 如果未在命令行设置 --spring.profiles.active=dev 以及环境变量中没有
+//			// SPRING_PROFILES_ACTIVE
+//			app.setAdditionalProfiles("dev");// 默认使用开发环境
+//		}
+//		app.run(args);
 
 
 //		SpringApplication.run(ServiceHiApplication.class, args);

@@ -32,13 +32,13 @@ public class BypassController {
         }
     }
 
-    @RequestMapping(name="getBypass")
-    public String getBypass(@RequestParam String version) {
-        forTest(version);
-
-
-        return "3";
-    }
+//    @RequestMapping(name="getBypass")
+//    public String getBypass(@RequestParam String version) {
+//        forTest(version);
+//
+//
+//        return "3";
+//    }
 
     private static void forTest(String version) {
         StopWatch stopWatch = new StopWatch();

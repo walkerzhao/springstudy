@@ -27,7 +27,7 @@
         <module>springconfig</module>
         <module>eureka-server</module>
         <module>service-feign</module>
-        <module>service-hi</module>
+        <module>spring_frame_test</module>
         <module>service-ribbon</module>
     </modules>
 

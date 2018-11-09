@@ -22,9 +22,7 @@ import java.util.Random;
  * @author zhaoyu
  * @date 2018-07-09
  */
-//@Controller
-@RequestMapping("/web")
-@Controller
+@RestController
 public class MiniProgramController {
 
 	private static final Logger log = LoggerFactory.getLogger(MiniProgramController.class);
@@ -36,50 +34,17 @@ public class MiniProgramController {
 	 * @param
 	 * @return
 	 */
-	@RequestMapping("/testRedirect1")
+	@RequestMapping(name="testRedirect")
 	public String getTest1(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		String redirectUrl =  "redirect:" + "http://www.baidu.com";
 		Random random = new Random();
 		int data = random.nextInt(21_0000_0000);
 		redirectUrl = redirectUrl + "/" + data;
 //		resp.sendRedirect(redirectUrl);
-		return redirectUrl;
+		return "hello";
+//		return redirectUrl;
 	}
 
-//	/**
-//	* one resolve method
-//	 * @param
-//	 * @return
-//	 */
-//	@RequestMapping("/testRedirect1")
-//	public void getTest2(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-//		String redirectUrl =  "http://www.baidu.com";
-//		Random random = new Random();
-//		int data = random.nextInt(21_0000_0000);
-//		redirectUrl = redirectUrl + "/" + data;
-//		resp.sendRedirect(redirectUrl);
-//	}
-
-//	/**
-//	 *  获取微信绑定手机号
-//	 * @param
-//	 * @return
-//	 */
-//	@RequestMapping("/testRedirect")
-//	public void getTest(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-//		String redirectUrl =  "http://www.baidu.com";
-//		Random random = new Random();
-//		int data = random.nextInt(21_0000_0000);
-//		redirectUrl = redirectUrl + "/" + data;
-//		try {
-//			int data1 = 10 / 0;
-//		}catch (Exception e) {
-//			resp.sendRedirect(redirectUrl);
-//			return;
-//		}
-//		resp.sendRedirect(redirectUrl);
-////		return ;
-//	}
 
 
 }
