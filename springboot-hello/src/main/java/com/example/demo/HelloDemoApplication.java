@@ -25,8 +25,6 @@ public class HelloDemoApplication {
 
 		SpringApplication.run(HelloDemoApplication.class, args);
 
-
-		System.out.println("hello,world");
 	}
 
 

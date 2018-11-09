@@ -1,13 +1,9 @@
-package com.forezp.web;
-
+package com.tencent.spring.web;
 
 import com.forezp.dao.LgnDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,15 +13,18 @@ import java.io.IOException;
 import java.util.Random;
 
 /**
+ *
+ * @link  https://github.com/spring-projects/spring-boot/issues/13771
  * redirect problem reproduce.
+ * redirect may produce oom. has fixed by spring framework
  *
  * @author zhaoyu
  * @date 2018-07-09
  */
 @RestController
-public class MiniProgramController {
+public class RedirectController {
 
-	private static final Logger log = LoggerFactory.getLogger(MiniProgramController.class);
+	private static final Logger log = LoggerFactory.getLogger(RedirectController.class);
 
 	@Autowired
 	private LgnDao lgnDao;
@@ -41,7 +40,8 @@ public class MiniProgramController {
 		int data = random.nextInt(21_0000_0000);
 		redirectUrl = redirectUrl + "/" + data;
 //		resp.sendRedirect(redirectUrl);
-		return "hello";
+//		return "hello";
+		return redirectUrl;
 //		return redirectUrl;
 	}
 

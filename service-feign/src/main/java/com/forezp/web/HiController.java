@@ -27,19 +27,6 @@ public class HiController {
         return schedualServiceHi.sayHiFromClientOne(name);
     }
 
-    /**
-     *  获取微信绑定手机号
-     * @param
-     * @return
-     */
-    @RequestMapping("/testRedirect1")
-    public String getTest1(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String redirectUrl =  "redirect:" + "http://www.baidu.com";
-        Random random = new Random();
-        int data = random.nextInt(21_0000_0000);
-        redirectUrl = redirectUrl + "/" + data;
-//		resp.sendRedirect(redirectUrl);
-        return redirectUrl;
-    }
+
 
 }

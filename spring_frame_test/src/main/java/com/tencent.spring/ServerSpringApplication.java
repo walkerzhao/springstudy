@@ -1,32 +1,19 @@
 package com.forezp;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.core.env.SimpleCommandLinePropertySource;
 import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.Random;
 
 @SpringBootApplication
 @RestController
 @EnableAsync
 @EnableEurekaClient
 @EnableFeignClients
-public class ServiceHiApplication {
+public class ServerSpringApplication {
 
 //	@Override
 //	public final ServiceStageProcessor newProcessor() {
@@ -38,7 +25,7 @@ public class ServiceHiApplication {
 //	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceHiApplication.class, args);
+		SpringApplication.run(ServerSpringApplication.class, args);
 //		SpringApplication app = new SpringApplication(ServiceHiApplication.class);
 //		SimpleCommandLinePropertySource source = new SimpleCommandLinePropertySource(args);
 //		if (!source.containsProperty("spring.profiles.active")
