@@ -1,4 +1,4 @@
-package com.forezp.dao;
+package com.tencent.spring.dao;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;

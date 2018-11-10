@@ -1,6 +1,6 @@
 package com.tencent.spring.web;
 
-import com.forezp.dao.LgnDao;
+import com.tencent.spring.dao.LgnDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,18 +33,23 @@ public class RedirectController {
 	 * @param
 	 * @return
 	 */
-	@RequestMapping(name="testRedirect")
-	public String getTest1(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+	@RequestMapping(value = "testRedirect")
+	public String testRedirect(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		String redirectUrl =  "redirect:" + "http://www.baidu.com";
 		Random random = new Random();
 		int data = random.nextInt(21_0000_0000);
 		redirectUrl = redirectUrl + "/" + data;
-//		resp.sendRedirect(redirectUrl);
-//		return "hello";
 		return redirectUrl;
-//		return redirectUrl;
 	}
 
-
+	@RequestMapping(value = "testRedirect2")
+	public String testRedirect2(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		String redirectUrl =  "redirect:" + "http://www.baidu.com";
+		Random random = new Random();
+		int data = random.nextInt(21_0000_0000);
+		redirectUrl = redirectUrl + "/" + data;
+		resp.sendRedirect(redirectUrl);
+		return "suc";
+	}
 
 }
