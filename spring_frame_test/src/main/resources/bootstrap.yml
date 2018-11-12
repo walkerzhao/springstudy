@@ -17,3 +17,5 @@ logging.level:
     DEBUG
 
 server.tomcat.max-http-header-size: 3145728
+
+spring.aop.auto: true
