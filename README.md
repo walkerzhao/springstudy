@@ -32,6 +32,10 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 ## spring shell 制作工具
 
 
+## spring boot和logback结合测试
+* 参考：https://github.com/souyunku/SpringBootExamples/tree/master/spring-boot-logback
+* https://juejin.im/post/5a1f86f0f265da4326529c61
+
 ## web安全
 
 
