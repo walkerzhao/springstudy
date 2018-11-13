@@ -61,7 +61,7 @@ public class LogAspect {
         String target = targetClass.getName() + "#" + method.getName();
 
         String params = null;
-             params = JSONObject.toJSONStringWithDateFormat(joinPoint.getArgs(), dateFormat, SerializerFeature.WriteMapNullValue);
+        params = JSONObject.toJSONStringWithDateFormat(joinPoint.getArgs(), dateFormat, SerializerFeature.WriteMapNullValue);
 
         log.info(STRING_START + "{} 开始调用--> {} 参数:{}", classAndMethod.toString(), target, params);
 

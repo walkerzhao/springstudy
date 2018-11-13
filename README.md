@@ -35,6 +35,8 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 ## spring boot和logback结合测试
 * 参考：https://github.com/souyunku/SpringBootExamples/tree/master/spring-boot-logback
 * https://juejin.im/post/5a1f86f0f265da4326529c61
+* traceid的原理详解：https://blog.csdn.net/u013039300/article/details/79577356
+* 用法--官网：https://spring.io/projects/spring-cloud-sleuth
 
 ## web安全
 
