@@ -30,6 +30,7 @@
         <module>spring_frame_test</module>
         <module>service-ribbon</module>
         <module>spring-boot-logback</module>
+        <module>spring-boot-kafka</module>
     </modules>
 
     <properties>

@@ -41,5 +41,9 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 ## web安全
 
 
+## spring-kafka学习
+* kafka安装-基本测试:https://blog.csdn.net/u010046908/article/details/62229015
+
+
 ## spring性能优化
 * undertow替换tomcat
