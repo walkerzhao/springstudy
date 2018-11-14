@@ -13,7 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <!--<spring-cloud-dependencies.version>Camden.SR5</spring-cloud-dependencies.version>-->
-        <spring-cloud-sleuth.version>Camden.SR5</spring-cloud-sleuth.version>
+        <spring-cloud-sleuth.version>2.0.1.RELEASE</spring-cloud-sleuth.version>
     </properties>
 
     <parent>
@@ -41,15 +41,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.31</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
         </dependency>
 
     </dependencies>
