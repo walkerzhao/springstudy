@@ -35,8 +35,6 @@ public class ServerSpringApplication {
 		}
 		app.run(args);
 
-
-		SpringApplication.run(ServerSpringApplication.class, args);
 	}
 
 
