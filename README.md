@@ -22,6 +22,7 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 ## spring config配置相关
 
 ## spring ioc/aop学习
+* ioc:https://zhuanlan.zhihu.com/p/29344811 
 
 ## 路由注册与发现--eureka
 
