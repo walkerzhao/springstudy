@@ -28,3 +28,4 @@ springconfig/target/maven-archiver/pom.properties
 springconfig/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 springconfig/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 spring-boot-logback/target/classes/application.properties
+spring-boot-logback/target/classes/application.properties
