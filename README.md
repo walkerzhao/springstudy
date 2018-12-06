@@ -22,6 +22,7 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 ## spring config配置相关
 
 ## spring ioc/aop学习
+* ioc:https://zhuanlan.zhihu.com/p/29344811 
 
 ## 路由注册与发现--eureka
 
@@ -39,6 +40,10 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 * 用法--官网：https://spring.io/projects/spring-cloud-sleuth
 
 ## web安全
+
+
+## spring-kafka学习
+* kafka安装-基本测试:https://blog.csdn.net/u010046908/article/details/62229015
 
 
 ## spring性能优化
