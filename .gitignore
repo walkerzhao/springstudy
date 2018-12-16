@@ -29,6 +29,9 @@ springconfig/target/maven-status/maven-compiler-plugin/compile/default-compile/c
 springconfig/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 spring-boot-logback/target/classes/application.properties
 
+spring-boot-logback/target/classes/application.properties
+
+
 spring-boot-guava-cache/target/*
 
 spring-boot-kafka/target/*
@@ -38,8 +41,6 @@ spring-boot-logback/target/classes/application.properties
 
 spring-boot-guava-cache/target/test-classes/com/km/SpringBootGuavaCacheApplicationTests.class
 
-*.class
+springfeature/target/classes/application-test.yaml
 
-*.html
-
-springconfig/target/test-classes/com/example/demo/DemoApplicationTests.class
+springfeature/target/classes/application.properties
