@@ -24,7 +24,7 @@
         <!--<module>son-project</module>-->
         <!--<module>daughter-project</module>-->
         <module>springboot-hello</module>
-        <module>springconfig</module>
+        <module>springfeature</module>
         <module>eureka-server</module>
         <module>service-feign</module>
         <module>spring_frame_test</module>

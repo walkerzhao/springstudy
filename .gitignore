@@ -37,3 +37,9 @@ spring-boot-logback/target/*
 spring-boot-logback/target/classes/application.properties
 
 spring-boot-guava-cache/target/test-classes/com/km/SpringBootGuavaCacheApplicationTests.class
+
+*.class
+
+*.html
+
+springconfig/target/test-classes/com/example/demo/DemoApplicationTests.class
