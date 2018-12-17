@@ -44,3 +44,5 @@ spring-boot-guava-cache/target/test-classes/com/km/SpringBootGuavaCacheApplicati
 /springfeature/.mvn/wrapper/maven-wrapper.jar
 /springconfig/target/test-classes/com/example/demo/DemoApplicationTests.class
 /springfeature/.mvn/wrapper/maven-wrapper.jar
+springfeature/target/classes/application-test.yaml
+springfeature/target/classes/application.properties

@@ -22,7 +22,19 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 ## spring config配置相关
 
 ## spring ioc/aop学习
-* ioc:https://zhuanlan.zhihu.com/p/29344811 
+### spring ioc/DI
+* spring 的ioc容器来控制对象的生命周期和对象之间的关系.
+* ioc:https://zhuanlan.zhihu.com/p/29344811
+* ioc是一种思想,对象和对象之间松耦合,功能复用,方便测试,使得整体架构比较灵活.
+* DI,依赖注入,和IOC是一个东西的两个角度的描述. 也就是对象依赖IOC容器去注入生成.
+
+
+### spring aop
+
+
+## spring completablefuture
+*
+
 
 ## 路由注册与发现--eureka
 
