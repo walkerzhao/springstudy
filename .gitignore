@@ -41,9 +41,12 @@ spring-boot-logback/target/classes/application.properties
 
 spring-boot-guava-cache/target/test-classes/com/km/SpringBootGuavaCacheApplicationTests.class
 
+/springfeature/.mvn/wrapper/maven-wrapper.jar
+/springconfig/target/test-classes/com/example/demo/DemoApplicationTests.class
+/springfeature/.mvn/wrapper/maven-wrapper.jar
 springfeature/target/classes/application-test.yaml
-
 springfeature/target/classes/application.properties
+<<<<<<< HEAD
 
 spring-boot-logback/target/classes/application.properties
 
@@ -58,3 +61,11 @@ springconfig/target/classes/com/tencent/feature/async/CompletableFutureContoller
 springconfig/target/test-classes/com/tencent/feature/completefuture/CompleteFutureTest$1.class
 
 springconfig/target/classes/com/tencent/feature/async/CompletableFutureContoller.class
+=======
+/springfeature/.mvn/wrapper/maven-wrapper.jar
+/springfeature/.mvn/wrapper/maven-wrapper.properties
+/springfeature/mvnw
+/springfeature/mvnw.cmd
+/springfeature/.mvn/wrapper/maven-wrapper.jar
+/springfeature/.mvn/wrapper
+>>>>>>> origin/master

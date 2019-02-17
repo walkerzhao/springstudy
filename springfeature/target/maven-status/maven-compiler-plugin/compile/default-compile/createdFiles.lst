@@ -1,8 +1,0 @@
-com/tencent/feature/FeatureDemoApplication.class
-com/tencent/feature/async/ErrorController.class
-com/tencent/feature/async/AsyncTimed.class
-com/tencent/feature/async/WebMvcConfiguration.class
-com/tencent/feature/async/AsyncTimedAspect.class
-com/tencent/feature/async/CompletableFutureReturnValueHandler.class
-com/tencent/feature/async/CompletableFutureContoller.class
-com/tencent/feature/async/SomeService.class
