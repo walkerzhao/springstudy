@@ -44,3 +44,17 @@ spring-boot-guava-cache/target/test-classes/com/km/SpringBootGuavaCacheApplicati
 springfeature/target/classes/application-test.yaml
 
 springfeature/target/classes/application.properties
+
+spring-boot-logback/target/classes/application.properties
+
+spring-boot-logback/target/classes/application.properties
+
+springconfig/target/classes/com/tencent/feature/async/CompletableFutureContoller.class
+
+springconfig/target/test-classes/com/tencent/feature/completefuture/CompleteFutureTest.class
+
+springconfig/target/classes/com/tencent/feature/async/CompletableFutureContoller.class
+
+springconfig/target/test-classes/com/tencent/feature/completefuture/CompleteFutureTest$1.class
+
+springconfig/target/classes/com/tencent/feature/async/CompletableFutureContoller.class
