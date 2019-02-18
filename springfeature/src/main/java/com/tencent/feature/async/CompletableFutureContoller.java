@@ -36,7 +36,7 @@ public class CompletableFutureContoller {
     LOG.info("Servlet Thread Id = '" + Thread.currentThread().getName() + "'.");
     
     return someService.getMessage()
-      .thenApply(msg -> new ModelAndView("message", "message", msg));
+      .thenApplyAsync(msg -> new ModelAndView("message", "message", msg));
   }
 
   @RequestMapping(value = "/test", method = RequestMethod.GET)
