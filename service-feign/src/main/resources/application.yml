@@ -7,3 +7,11 @@ server:
 spring:
   application:
     name: service-feign
+
+logging:
+  level:
+    com.netflix.loadbalancer.LoadBalancerContext: DEBUG
+    com.forezp.service.SchedualServiceHi: DEBUG
+
+serv_url:
+  reg: http://127.0.0.1:8764
