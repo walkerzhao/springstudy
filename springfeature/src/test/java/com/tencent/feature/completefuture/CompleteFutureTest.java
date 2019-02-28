@@ -164,7 +164,7 @@ public class CompleteFutureTest {
     }
 
 
-    
+
 
     private Object delayedLowerCase(String s) {
         try {
