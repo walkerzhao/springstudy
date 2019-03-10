@@ -69,3 +69,5 @@ springconfig/target/classes/com/tencent/feature/async/CompletableFutureContoller
 /springfeature/.mvn/wrapper/maven-wrapper.jar
 /springfeature/.mvn/wrapper
 >>>>>>> origin/master
+
+spring-boot-logback/target/classes/application.properties

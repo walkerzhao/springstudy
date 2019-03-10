@@ -36,6 +36,7 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 * spring mvc 的异步任务demo,参考:https://github.com/AndreasKl/spring-boot-mvc-completablefuture
 * https://juejin.im/post/59eae61b51882549fc512b34#comment
 * https://www.jianshu.com/p/dade70be4edd
+* 分析参考:https://segmentfault.com/a/1190000012525994
 
 
 ## 路由注册与发现--eureka
