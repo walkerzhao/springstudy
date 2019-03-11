@@ -37,7 +37,8 @@ ${project.build.finalName}：项目打包输出文件的名称，默认为${proj
 * https://juejin.im/post/59eae61b51882549fc512b34#comment
 * https://www.jianshu.com/p/dade70be4edd
 * 分析参考:https://segmentfault.com/a/1190000012525994
-
+* completablefuture源码分析：https://juejin.im/entry/59e366cf6fb9a04517043c22
+* 一个demo:https://github.com/chanjarster/web-async-learn/tree/master/spring-mvc-async-processing
 
 ## 路由注册与发现--eureka
 
