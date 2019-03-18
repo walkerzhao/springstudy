@@ -14,3 +14,4 @@ https://www.cnblogs.com/dennyzhangdd/p/9026303.html
 * 延迟结果
 * 分析：https://www.cnblogs.com/guogangj/p/5457959.html
 * https://my.oschina.net/wangxindong/blog/1555194
+* spring mvc 异步分析：https://github.com/edocevol/kantouspringmvc/blob/master/%E7%AC%AC22%E7%AB%A0%20%E5%BC%82%E6%AD%A5%E8%AF%B7%E6%B1%82.md
